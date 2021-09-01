@@ -1,6 +1,6 @@
 import * as Constants from "./Constants.js";
 export let State = [];
-export const Reducer = (state, action) => {
+export const Reducer = (state = State, action) => {
   switch (action.type) {
     case Constants.PUSH:
       return [...state, action.element];
